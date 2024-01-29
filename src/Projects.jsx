@@ -7,7 +7,7 @@ import movieImg from "./images/movie.png";
 import printShopImg from "./images/printshop.png";
 import titac from "./images/tac.png";
 import chatImg from "./images/ChatAppImg.png";
-import furnImg from "./images/FurnitureShopImg.png";
+import furnImg from "./images/furnitureShopImg.png";
 import docEditorImg from "./images/DocEditorImg.png";
 import { FaGithub } from "react-icons/fa6";
 import { HiCursorClick } from "react-icons/hi";
