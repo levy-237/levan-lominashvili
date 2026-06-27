@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root {
+  --beige-base: #ebe4d8;
+  --beige-light: #f7f3ec;
+  --beige-deep: #d9cfc0;
+  --beige-accent: #c4a882;
+  --text-primary: #252018;
+  --text-body: color-mix(in srgb, var(--text-primary) 78%, transparent);
+  --text-muted: color-mix(in srgb, var(--text-primary) 67%, transparent);
+  --text-subtle: color-mix(in srgb, var(--text-primary) 47%, transparent);
+
+  background-color: var(--beige-base);
+  color: var(--text-primary);
+  font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.cursor-gradient {
+  --cursor-x: 0px;
+  --cursor-y: 0px;
+  background-color: var(--beige-base);
+  background-image: radial-gradient(
+    680px circle at var(--cursor-x) var(--cursor-y),
+    color-mix(in srgb, var(--beige-light) 55%, var(--beige-base)) 0%,
+    color-mix(in srgb, var(--beige-accent) 20%, var(--beige-base)) 22%,
+    color-mix(in srgb, var(--beige-deep) 14%, var(--beige-base)) 45%,
+    transparent 82%
+  );
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.nav-link-line {
+  width: 10px;
+  height: 1px;
+  flex-shrink: 0;
+  background-color: var(--text-subtle);
+  transition:
+    width 0.25s ease,
+    background-color 0.2s ease;
+}
+
+.nav-link-label {
+  transition: transform 0.25s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--text-primary);
+}
+
+.nav-link:hover .nav-link-line,
+.nav-link.active .nav-link-line {
+  width: 24px;
+  background-color: var(--text-primary);
+}
+
+.nav-link:hover .nav-link-label,
+.nav-link.active .nav-link-label {
+  transform: translateX(4px);
+}
+
+.social-link {
+  color: var(--text-subtle);
+  transition: color 0.2s ease;
+}
+
+.social-link:hover {
+  color: var(--text-primary);
+}
+
+.section-label {
+  color: var(--text-subtle);
+}
+
+.section-body {
+  color: var(--text-body);
+  font-size: 0.9375rem;
+  line-height: 1.82;
+}
