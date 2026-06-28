@@ -33,6 +33,18 @@ html {
   );
 }
 
+@media (max-width: 1023px) {
+  .cursor-gradient {
+    background-image: radial-gradient(
+      420px circle at var(--cursor-x) var(--cursor-y),
+      color-mix(in srgb, var(--beige-light) 55%, var(--beige-base)) 0%,
+      color-mix(in srgb, var(--beige-accent) 20%, var(--beige-base)) 22%,
+      color-mix(in srgb, var(--beige-deep) 14%, var(--beige-base)) 45%,
+      transparent 82%
+    );
+  }
+}
+
 .nav-link {
   display: inline-flex;
   align-items: center;

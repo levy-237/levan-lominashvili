@@ -12,7 +12,7 @@ type ProjectsProps = {
 export default function Projects({ language }: ProjectsProps) {
 
   return (
-    <section id="3" className="scroll-mt-24">
+    <section id="3" className="scroll-mt-20 lg:scroll-mt-24">
       <p className="mb-10 text-xs font-medium uppercase tracking-[0.22em] text-[var(--text-subtle)]">
         {localized(language, sectionLabels, "projects")}
       </p>
@@ -25,7 +25,7 @@ export default function Projects({ language }: ProjectsProps) {
           return (
             <article
               key={project.slug}
-              className="group relative grid grid-cols-[10rem_1fr] items-start gap-x-8 gap-y-3 rounded-md border border-transparent p-4 transition-colors duration-200 hover:border-[var(--beige-accent)]/40 hover:bg-[var(--beige-light)]/30"
+              className="group relative grid grid-cols-1 items-start gap-x-8 gap-y-4 rounded-md border border-transparent p-4 transition-colors duration-200 hover:border-[var(--beige-accent)]/40 hover:bg-[var(--beige-light)]/30 lg:grid-cols-[10rem_1fr] lg:gap-y-3"
             >
               <a
                 href={primaryLink.href}

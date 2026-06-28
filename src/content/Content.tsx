@@ -30,14 +30,14 @@ export default function Content() {
 
   return (
     <>
-      <div className="absolute top-8 right-60 z-10">
+      <div className="absolute top-6 right-6 z-10 lg:top-8 lg:right-60">
         <LanguageSwitcher language={language} setLanguage={setLanguage} />
       </div>
 
-      <div className="flex w-full items-start justify-between gap-40">
+      <div className="flex w-full flex-col items-start justify-between gap-10 lg:flex-row lg:gap-40">
         <SideBar language={language} activeSection={activeSection} />
 
-        <main className="flex w-[62%] max-w-2xl flex-col gap-24 py-24">
+        <main className="flex w-full max-w-2xl flex-col gap-16 py-10 lg:w-[62%] lg:gap-24 lg:py-24">
           <Introduction language={language} />
           <Experience language={language} />
           <Projects language={language} />

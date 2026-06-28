@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div
-      className="relative w-full h-full cursor-gradient px-60"
+      className="relative h-full w-full overflow-x-hidden cursor-gradient px-6 lg:px-60"
       style={
         {
           "--cursor-x": `${x}px`,

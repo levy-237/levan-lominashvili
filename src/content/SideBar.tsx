@@ -19,9 +19,9 @@ type SideBarProps = {
 
 export default function SideBar({ language, activeSection }: SideBarProps) {
   return (
-    <nav className="sticky top-0 flex h-screen w-[38%] max-w-md flex-col justify-between py-24">
-      <header className="space-y-3">
-        <h1 className="text-[1.75rem] font-medium leading-tight tracking-tight text-[var(--text-primary)]">
+    <nav className="flex w-full flex-col gap-8 lg:sticky lg:top-0 lg:h-screen lg:w-[38%] lg:max-w-md lg:justify-between lg:gap-0 lg:py-24">
+      <header className="space-y-3 pr-16 lg:pr-0">
+        <h1 className="text-[1.5rem] font-medium leading-tight tracking-tight text-[var(--text-primary)] lg:text-[1.75rem]">
           Levan Lominashvili
         </h1>
         <p className="text-xs font-medium uppercase tracking-[0.22em] text-[var(--text-subtle)]">
@@ -29,7 +29,7 @@ export default function SideBar({ language, activeSection }: SideBarProps) {
         </p>
       </header>
 
-      <ul className="flex flex-col gap-4">
+      <ul className="flex flex-row flex-wrap gap-x-5 gap-y-3 lg:flex-col lg:gap-4">
         {navItems.map((item) => {
           const isActive = activeSection === item.id;
 
@@ -50,7 +50,7 @@ export default function SideBar({ language, activeSection }: SideBarProps) {
         })}
       </ul>
 
-      <footer className="flex items-center gap-5">
+      <footer className="flex flex-wrap items-center gap-x-5 gap-y-2">
         {socialItems.map((item) =>
           item.href.startsWith("http") ? (
             <a

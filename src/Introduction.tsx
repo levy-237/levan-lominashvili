@@ -11,7 +11,7 @@ export default function Introduction({ language }: IntroductionProps) {
   const paragraphs = localizedList(language, introduction, "paragraphs");
 
   return (
-    <section id="1" className="max-w-xl scroll-mt-24">
+    <section id="1" className="max-w-xl scroll-mt-20 lg:scroll-mt-24">
       <p className="section-label mb-8 text-xs font-medium uppercase tracking-[0.22em]">
         {localized(language, sectionLabels, "about")}
       </p>

@@ -12,7 +12,7 @@ type ExperienceProps = {
 export default function Experience({ language }: ExperienceProps) {
 
   return (
-    <section id="2" className="scroll-mt-24">
+    <section id="2" className="scroll-mt-20 lg:scroll-mt-24">
       <p className="mb-10 text-xs font-medium uppercase tracking-[0.22em] text-[var(--text-subtle)]">
         {localized(language, sectionLabels, "experience")}
       </p>
@@ -24,7 +24,7 @@ export default function Experience({ language }: ExperienceProps) {
           return (
             <article
               key={`${item.company}-${item.period}`}
-              className="group grid grid-cols-[7.5rem_1fr] gap-x-8 gap-y-3 rounded-md border border-transparent p-4 transition-colors duration-200 hover:border-[var(--beige-accent)]/40 hover:bg-[var(--beige-light)]/30"
+              className="group grid grid-cols-1 gap-x-8 gap-y-2 rounded-md border border-transparent p-4 transition-colors duration-200 hover:border-[var(--beige-accent)]/40 hover:bg-[var(--beige-light)]/30 lg:grid-cols-[7.5rem_1fr] lg:gap-y-3"
             >
               <p className="pt-0.5 text-xs leading-normal text-[var(--text-subtle)]">
                 {item.period}
