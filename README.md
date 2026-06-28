@@ -15,8 +15,3 @@ npm run dev
 - `npm run build` — production build
 - `npm run preview` — preview production build
 - `npm run lint` — run ESLint
-
-## Content
-
-Edit the files in `src/data/` to update copy, experience, projects, and contact links.
-# levan-lominashvili
