@@ -93,7 +93,7 @@ export const experience: ExperienceItem[] = [
     company: "Georgia Ltd",
     employmentType: "Internship",
     "employmentType-de": "Praktikum",
-    period: "Nov 2022 — Oct 2023",
+    period: "Apr 2023 — Oct 2023",
     location: "Tbilisi, Georgia",
     "location-de": "Tiflis, Georgien",
     description:

@@ -6,15 +6,17 @@ function App() {
   const { x, y } = useCursorPosition();
 
   return (
-    <div
-      className="relative h-full w-full overflow-x-hidden cursor-gradient px-6 lg:px-60"
-      style={
-        {
-          "--cursor-x": `${x}px`,
-          "--cursor-y": `${y}px`,
-        } as React.CSSProperties
-      }
-    >
+    <div className="relative min-h-full w-full overflow-x-hidden px-6 lg:px-60">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none fixed inset-0 -z-10 cursor-gradient"
+        style={
+          {
+            "--cursor-x": `${x}px`,
+            "--cursor-y": `${y}px`,
+          } as React.CSSProperties
+        }
+      />
       <Content />
     </div>
   );
