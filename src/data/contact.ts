@@ -17,7 +17,7 @@ export const contact = {
     },
     {
       label: "LinkedIn",
-      href: "#",
+      href: "https://www.linkedin.com/in/levan-lominashvili-92b770220/",
     },
   ] satisfies ContactLink[],
 };

@@ -19,14 +19,20 @@ type SideBarProps = {
 
 export default function SideBar({ language, activeSection }: SideBarProps) {
   return (
-    <nav className="flex w-full flex-col gap-8 lg:sticky lg:top-0 lg:h-screen lg:w-[38%] lg:max-w-md lg:justify-between lg:gap-0 lg:py-24">
-      <header className="space-y-3 pr-16 lg:pr-0">
+    <nav className="flex w-full flex-col gap-8 lg:fixed lg:top-0 lg:left-16 lg:h-screen lg:w-[38%] lg:max-w-md lg:justify-between lg:gap-0 lg:py-24 xl:left-28 2xl:left-60">
+      <header className="space-y-3 pr-16 lg:pr-0 max-lg:mt-10">
         <h1 className="text-[1.5rem] font-medium leading-tight tracking-tight text-[var(--text-primary)] lg:text-[1.75rem]">
           Levan Lominashvili
         </h1>
         <p className="text-xs font-medium uppercase tracking-[0.22em] text-[var(--text-subtle)]">
           {localized(language, ui, "role")}
         </p>
+        <a
+          href={`mailto:${contact.email}`}
+          className="inline-flex text-sm font-medium text-[var(--text-muted)] transition-colors hover:text-[var(--text-primary)]"
+        >
+          {contact.email}
+        </a>
       </header>
 
       <ul className="flex flex-row flex-wrap gap-x-5 gap-y-3 lg:flex-col lg:gap-4">
