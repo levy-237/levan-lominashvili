@@ -31,12 +31,12 @@ export const experience: ExperienceItem[] = [
     highlights: [
       "Connected frontend flows to GraphQL/REST APIs with server-side data loading, validated form submissions, protected sessions, and CRUD operations across public and internal applications.",
       "Implemented backend support in Django/DRF for candidate accounts, email verification, password recovery, profile completeness, job engagement tracking, and job alert subscriptions.",
-      "Worked on production features used across public job portals and internal business tools.",
+      "Worked on production features used across public job portals and internal business tools, including AI chat support for portal users.",
     ],
     "highlights-de": [
       "Anbindung von Frontend-Flows an GraphQL/REST-APIs mit serverseitigem Data Loading, validierten Formularen, geschützten Sessions und CRUD-Operationen in öffentlichen und internen Anwendungen.",
       "Implementierung von Backend-Features in Django/DRF für Kandidatenkonten, E-Mail-Verifizierung, Passwort-Wiederherstellung, Profilvollständigkeit, Job-Interaktionen und Job-Abos.",
-      "Arbeit an produktiven Features für öffentliche Jobportale und interne Business-Tools.",
+      "Arbeit an produktiven Features für öffentliche Jobportale und interne Business-Tools, einschließlich AI-Chat-Unterstützung für Portalnutzer.",
     ],
     stack: [
       "React",
@@ -65,12 +65,12 @@ export const experience: ExperienceItem[] = [
     "description-de":
       "Frontend-Entwicklung für produktive Jobportale und interne Admin-Tools mit Fokus auf die Modernisierung älterer Bootstrap-Seiten zu wartbaren Next.js/React-Anwendungen.",
     highlights: [
-      "Rebuilt older Bootstrap-based pages into production Next.js/React applications for 10 branded job portals, including TECjobs.at, jusjobs.at, and medjobs.at with responsive, portal-specific UI.",
+      "Rebuilt older Bootstrap-based pages into production Next.js/React applications for 10 branded job portals, including TECjobs.at, jusjobs.at, and medjobs.at, with responsive, portal-specific UI and AI chat integration.",
       "Built internal admin workflows used by sales and operations teams, including company/contact management, job review queues, offer and invoice screens, booking handling, and crawler administration.",
       "Developed responsive interfaces, reusable UI patterns, forms, filters, and business-facing frontend flows.",
     ],
     "highlights-de": [
-      "Umbau älterer Bootstrap-basierter Seiten zu produktiven Next.js/React-Anwendungen für 10 gebrandete Jobportale, darunter TECjobs.at, jusjobs.at und medjobs.at, mit responsiver, portalspezifischer UI.",
+      "Umbau älterer Bootstrap-basierter Seiten zu produktiven Next.js/React-Anwendungen für 10 gebrandete Jobportale, darunter TECjobs.at, jusjobs.at und medjobs.at, mit responsiver, portalspezifischer UI und AI-Chat-Integration.",
       "Entwicklung interner Admin-Workflows für Sales- und Operations-Teams, darunter Firmen-/Kontaktverwaltung, Job-Review-Queues, Angebots- und Rechnungsansichten, Buchungsverwaltung und Crawler-Administration.",
       "Entwicklung responsiver Interfaces, wiederverwendbarer UI-Patterns, Formulare, Filter und businessorientierter Frontend-Flows.",
     ],
