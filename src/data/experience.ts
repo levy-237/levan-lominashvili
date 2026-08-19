@@ -57,7 +57,7 @@ export const experience: ExperienceItem[] = [
     company: "Candidatis GmbH",
     employmentType: "Full-time",
     "employmentType-de": "Vollzeit",
-    period: "Jan 2024 — Apr 2026",
+    period: "Feb 2024 — Apr 2026",
     location: "Vienna, Austria",
     "location-de": "Wien, Österreich",
     description:
