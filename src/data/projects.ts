@@ -18,37 +18,76 @@ export type ProjectItem = {
 
 export const projects: ProjectItem[] = [
   {
+    title: "Flight Operations Dashboard",
+    slug: "flight-operations-dashboard",
+    image: "flighttracker.png",
+    description:
+      "A real-time flight-tracking platform with a Docker-containerized Java 23 / Spring Boot backend, live ADS-B data ingestion, REST APIs, persistence, WebSocket broadcasting, and a React map frontend.",
+    "description-de":
+      "Eine Echtzeit-Flugtracking-Plattform mit Docker-containerisiertem Java-23-/Spring-Boot-Backend, Live-ADS-B-Daten, REST-APIs, Persistenz, WebSocket-Broadcasting und React-Kartenfrontend.",
+    highlights: [
+      "Built and deployed a Java 23 / Spring Boot backend that ingests live ADS-B data, persists flights and aircraft, and exposes REST APIs for flights, aircraft, and live positions.",
+      "Implemented real-time WebSocket broadcasting for connected clients and a nightly scheduled cleanup job to keep persisted operational data limited to current flight activity.",
+      "Built a live React map frontend consuming real-time WebSocket updates, using Codex for AI-assisted implementation, debugging, and refactoring with manual code review, testing, and validation.",
+    ],
+    "highlights-de": [
+      "Java-23-/Spring-Boot-Backend entwickelt und deployed, das Live-ADS-B-Daten verarbeitet, Flüge und Flugzeuge persistiert und REST-APIs für Flüge, Flugzeuge und Positionen bereitstellt.",
+      "Echtzeit-WebSocket-Broadcasting für verbundene Clients sowie einen nächtlichen Cleanup-Job implementiert, um persistierte Betriebsdaten aktuell zu halten.",
+      "Live-Kartenfrontend mit React entwickelt, das Echtzeit-WebSocket-Updates verarbeitet; Codex für KI-gestützte Implementierung, Debugging und Refactoring mit manueller Code-Prüfung, Testing und Validierung eingesetzt.",
+    ],
+    stack: [
+      "Java",
+      "TypeScript",
+      "Spring Boot",
+      "React",
+      "REST APIs",
+      "WebSockets",
+      "PostgreSQL",
+      "Docker",
+      "Codex",
+    ],
+    links: [
+      {
+        label: "Live Demo",
+        "label-de": "Live-Demo",
+        href: "https://flight-tracker-client.vercel.app/",
+      },
+    ],
+  },
+  {
     title: "eAutoKauf",
     slug: "eautokauf",
     image: "eautokauf.png",
     description:
-      "A full-stack electric vehicle marketplace with advanced search, URL-synced filters, authentication, listing management, saved searches, image uploads, and EV-specific vehicle data.",
+      "A full-stack electric vehicle marketplace with advanced search, URL-synced filtering, authentication, listing management, saved searches, image uploads, and structured EV-specific vehicle data.",
     "description-de":
-      "Ein Full-Stack-Marktplatz für Elektrofahrzeuge mit erweiterter Suche, URL-synchronisierten Filtern, Authentifizierung, Listing-Verwaltung, gespeicherten Suchen, Bild-Uploads und EV-spezifischen Fahrzeugdaten.",
+      "Ein Full-Stack-Marktplatz für Elektrofahrzeuge mit erweiterter Suche, URL-synchronisierten Filtern, Authentifizierung, Listing-Verwaltung, gespeicherten Suchen, Bild-Uploads und strukturierten EV-spezifischen Fahrzeugdaten.",
     highlights: [
-      "Built a full-stack EV marketplace with URL-synced advanced search, vehicle detail pages, favourites, side-by-side comparison, user dashboard, and listing creation/editing with validated forms.",
-      "Designed EV-specific listing and backend flows with Django REST Framework, including JWT authentication, email verification, password recovery, saved searches with email notifications, ImageKit uploads, listing review states, price history, and structured vehicle data.",
-      "Implemented production-style marketplace behavior with protected user workflows, ownership-based listing management, reusable frontend flows, API-driven data loading, and real-time features using WebSockets and Redis.",
+      "Built a full-stack EV marketplace with Next.js, React, and TypeScript, including URL-synced advanced search, dynamic vehicle filtering, authenticated dashboards, and complex listing forms with Zod-based validation.",
+      "Developed the backend with Django REST Framework, PostgreSQL, and Redis, implementing JWT authentication, email verification, password recovery, saved-search notifications, ImageKit uploads, listing review workflows, and price history.",
+      "Designed structured EV data flows covering battery, range, charging, warranty, condition, and vehicle status, with server-side validation and protected ownership-based listing management.",
     ],
     "highlights-de": [
-      "Entwicklung eines Full-Stack-Marktplatzes für Elektrofahrzeuge mit URL-synchronisierter erweiterter Suche, Fahrzeugdetailseiten, Favoriten, direktem Vergleich, User-Dashboard sowie Listing-Erstellung und -Bearbeitung mit validierten Formularen.",
-      "Entwicklung EV-spezifischer Listing- und Backend-Flows mit Django REST Framework, darunter JWT-Authentifizierung, E-Mail-Verifizierung, Passwort-Wiederherstellung, gespeicherte Suchen mit E-Mail-Benachrichtigungen, ImageKit-Uploads, Listing-Prüfstatus, Preisverlauf und strukturierte Fahrzeugdaten.",
-      "Umsetzung produktionsnaher Marktplatz-Funktionalität mit geschützten User-Flows, besitzbasierter Listing-Verwaltung, wiederverwendbaren Frontend-Flows, API-basiertem Data Loading und Echtzeit-Features mit WebSockets und Redis.",
+      "Full-Stack-EV-Marktplatz mit Next.js, React und TypeScript entwickelt, mit URL-synchronisierter erweiterter Suche, dynamischen Fahrzeugfiltern, authentifizierten Dashboards und komplexen Inseratsformularen mit Zod-basierter Validierung.",
+      "Backend mit Django REST Framework, PostgreSQL und Redis entwickelt, inklusive JWT-Authentifizierung, E-Mail-Verifizierung, Passwort-Wiederherstellung, Saved-Search-Benachrichtigungen, ImageKit-Uploads, Inseratsprüfung und Preisverlauf.",
+      "Strukturierte EV-Datenflüsse für Batterie, Reichweite, Laden, Garantie, Zustand und Fahrzeugstatus umgesetzt, inklusive serverseitiger Validierung und geschützter besitzbasierter Inseratsverwaltung.",
     ],
     stack: [
+      "TypeScript",
+      "Python",
       "Next.js",
       "React",
-      "TypeScript",
-      "Tailwind CSS",
       "Django",
       "Django REST Framework",
       "PostgreSQL",
       "Redis",
+      "REST APIs",
       "WebSockets",
       "JWT",
-      "ImageKit",
-      "React Hook Form",
       "Zod",
+      "React Hook Form",
+      "Tailwind CSS",
+      "ImageKit",
       "Docker",
     ],
     links: [

@@ -1,6 +1,8 @@
 export type ExperienceItem = {
   title: string;
   "title-de"?: string;
+  subtitle?: string;
+  "subtitle-de"?: string;
   company: string;
   employmentType: string;
   "employmentType-de"?: string;
@@ -16,104 +18,79 @@ export type ExperienceItem = {
 
 export const experience: ExperienceItem[] = [
   {
-    title: "Full Stack Developer",
-    "title-de": "Full-Stack-Entwickler",
+    title: "Software Developer",
+    "title-de": "Softwareentwickler",
+    subtitle: "Frontend → Full Stack Developer",
+    "subtitle-de": "Frontend → Full Stack Developer",
     company: "Candidatis GmbH",
     employmentType: "Full-time",
     "employmentType-de": "Vollzeit",
-    period: "Apr 2026 — Aug 2026",
+    period: "Feb 2024 — Aug 2026",
     location: "Vienna, Austria",
     "location-de": "Wien, Österreich",
     description:
-      "Full-stack development on production HR-tech applications, working across Next.js frontend flows, GraphQL/REST API integrations, and Django backend features.",
+      "Progressed from frontend to full-stack development across production HR-tech applications, working with Next.js, React, TypeScript, GraphQL/REST APIs, and backend functionality in Python/Django.",
     "description-de":
-      "Full-Stack-Entwicklung an produktiven HR-Tech-Anwendungen mit Next.js-Frontend-Flows, GraphQL/REST-API-Integrationen und Django-Backend-Features.",
+      "Weiterentwicklung von Frontend- zu Full-Stack-Aufgaben an produktiven HR-Tech-Anwendungen mit Next.js, React, TypeScript, GraphQL-/REST-APIs sowie Backend-Funktionalitäten mit Python/Django.",
     highlights: [
-      "Connected frontend flows to GraphQL/REST APIs with server-side data loading, validated form submissions, protected sessions, and CRUD operations across public and internal applications.",
-      "Implemented backend support in Django/DRF for candidate accounts, email verification, password recovery, profile completeness, job engagement tracking, and job alert subscriptions.",
-      "Worked on production features used across public job portals and internal business tools, including AI chat support for portal users.",
+      "Rebuilt legacy Bootstrap-based pages into production Next.js, React, TypeScript, and JavaScript applications for 10 branded job portals, including TECjobs.at, jusjobs.at, and medjobs.at.",
+      "Built internal applications and workflows for sales and operations, including company/contact management, job review queues, booking, offers, invoices, and crawler administration.",
+      "Integrated GraphQL and REST APIs, server-side data loading, authentication, and CRUD workflows, using Zod for form and payload validation across public and internal applications.",
+      "Developed backend functionality with Python, Django, and Django REST Framework, including candidate accounts, email verification, password recovery, profile completeness, engagement tracking, and job-alert subscriptions.",
+      "Contributed code to a Java-based job crawler and used Claude and Cursor IDE for implementation, debugging, and refactoring, with generated code manually reviewed, tested, and validated.",
     ],
     "highlights-de": [
-      "Anbindung von Frontend-Flows an GraphQL/REST-APIs mit serverseitigem Data Loading, validierten Formularen, geschützten Sessions und CRUD-Operationen in öffentlichen und internen Anwendungen.",
-      "Implementierung von Backend-Features in Django/DRF für Kandidatenkonten, E-Mail-Verifizierung, Passwort-Wiederherstellung, Profilvollständigkeit, Job-Interaktionen und Job-Abos.",
-      "Arbeit an produktiven Features für öffentliche Jobportale und interne Business-Tools, einschließlich AI-Chat-Unterstützung für Portalnutzer.",
+      "Legacy-Seiten auf Bootstrap-Basis in produktive Anwendungen mit Next.js, React, TypeScript und JavaScript für 10 Jobportale umgebaut, darunter TECjobs.at, jusjobs.at und medjobs.at.",
+      "Interne Anwendungen und Workflows für Vertrieb und Operations entwickelt, darunter Firmen-/Kontaktverwaltung, Job-Review-Queues, Buchungen, Angebote, Rechnungen und Crawler-Administration.",
+      "GraphQL- und REST-APIs integriert sowie serverseitiges Data Loading, Authentifizierung und CRUD-Workflows umgesetzt; Zod für Formular- und Payload-Validierung in öffentlichen und internen Anwendungen eingesetzt.",
+      "Backend-Funktionalitäten mit Python, Django und Django REST Framework entwickelt, darunter Kandidatenkonten, E-Mail-Verifizierung, Passwort-Wiederherstellung, Profilvollständigkeit, Engagement-Tracking und Job-Alert-Abonnements.",
+      "Code zu einem Java-basierten Job-Crawler beigetragen sowie Claude und Cursor IDE für Implementierung, Debugging und Refactoring eingesetzt; generierten Code manuell geprüft, getestet und validiert.",
     ],
     stack: [
+      "TypeScript",
+      "JavaScript",
+      "Java",
+      "Python",
       "React",
       "Next.js",
-      "TypeScript",
-      "Python",
       "Django",
       "DRF",
       "GraphQL",
       "REST APIs",
       "PostgreSQL",
-      "Git",
-    ],
-  },
-  {
-    title: "Frontend Developer",
-    "title-de": "Frontend-Entwickler",
-    company: "Candidatis GmbH",
-    employmentType: "Full-time",
-    "employmentType-de": "Vollzeit",
-    period: "Feb 2024 — Apr 2026",
-    location: "Vienna, Austria",
-    "location-de": "Wien, Österreich",
-    description:
-      "Frontend development for production job portals and internal admin tools, focused on modernizing older Bootstrap-based pages into maintainable Next.js/React applications.",
-    "description-de":
-      "Frontend-Entwicklung für produktive Jobportale und interne Admin-Tools mit Fokus auf die Modernisierung älterer Bootstrap-Seiten zu wartbaren Next.js/React-Anwendungen.",
-    highlights: [
-      "Rebuilt older Bootstrap-based pages into production Next.js/React applications for 10 branded job portals, including TECjobs.at, jusjobs.at, and medjobs.at, with responsive, portal-specific UI and AI chat integration.",
-      "Built internal admin workflows used by sales and operations teams, including company/contact management, job review queues, offer and invoice screens, booking handling, and crawler administration.",
-      "Developed responsive interfaces, reusable UI patterns, forms, filters, and business-facing frontend flows.",
-    ],
-    "highlights-de": [
-      "Umbau älterer Bootstrap-basierter Seiten zu produktiven Next.js/React-Anwendungen für 10 gebrandete Jobportale, darunter TECjobs.at, jusjobs.at und medjobs.at, mit responsiver, portalspezifischer UI und AI-Chat-Integration.",
-      "Entwicklung interner Admin-Workflows für Sales- und Operations-Teams, darunter Firmen-/Kontaktverwaltung, Job-Review-Queues, Angebots- und Rechnungsansichten, Buchungsverwaltung und Crawler-Administration.",
-      "Entwicklung responsiver Interfaces, wiederverwendbarer UI-Patterns, Formulare, Filter und businessorientierter Frontend-Flows.",
-    ],
-    stack: [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "JavaScript",
-      "GraphQL",
-      "REST APIs",
+      "Zod",
       "Tailwind CSS",
       "Material UI",
-      "Sass",
       "Git",
     ],
   },
   {
     title: "Full Stack Developer Intern",
-    "title-de": "Full-Stack-Entwickler Praktikant",
-    company: "Georgia Ltd",
+    "title-de": "Full-Stack-Entwickler (Praktikum)",
+    company: "Gorgia Ltd",
     employmentType: "Internship",
     "employmentType-de": "Praktikum",
     period: "Apr 2023 — Oct 2023",
     location: "Tbilisi, Georgia",
     "location-de": "Tiflis, Georgien",
     description:
-      "Gained practical full-stack development experience by supporting frontend implementation, backend integration, testing, and task-based development.",
+      "Full-stack development experience across React frontend work, Django backend integration, automated testing, and task-based development.",
     "description-de":
-      "Praktische Full-Stack-Erfahrung durch Unterstützung bei Frontend-Implementierung, Backend-Integration, Testing und taskbasierter Entwicklung.",
+      "Full-Stack-Erfahrung mit React-Frontend-Entwicklung, Django-Backend-Integration, automatisierten Tests und taskbasierter Entwicklung.",
     highlights: [
-      "Supported frontend development by implementing UI sections, improving responsive layouts, and integrating components with backend data.",
-      "Tested React components with React Testing Library, covering form behavior, user interactions, and rendered UI states.",
-      "Wrote Django tests for backend views, models, and API functionality while working with Git, code reviews, and task-based development.",
+      "Developed React frontend components and responsive UI sections, integrating them with backend data and existing application flows.",
+      "Worked across frontend and backend tasks in a React and Django codebase, supporting feature implementation and application maintenance.",
+      "Wrote automated frontend tests with React Testing Library and Django tests for backend views, models, and API functionality while working with Git and code reviews.",
     ],
     "highlights-de": [
-      "Unterstützung der Frontend-Entwicklung durch Implementierung von UI-Sektionen, Verbesserung responsiver Layouts und Integration von Komponenten mit Backend-Daten.",
-      "Testen von React-Komponenten mit React Testing Library, darunter Formularverhalten, Benutzerinteraktionen und gerenderte UI-Zustände.",
-      "Schreiben von Django-Tests für Backend-Views, Models und API-Funktionalität während der Arbeit mit Git, Code Reviews und taskbasierter Entwicklung.",
+      "React-Frontend-Komponenten und responsive UI-Bereiche entwickelt und mit Backend-Daten sowie bestehenden Anwendungsabläufen integriert.",
+      "Frontend- und Backend-Aufgaben in einer React-/Django-Codebase übernommen und an Features sowie Wartung mitgearbeitet.",
+      "Automatisierte Frontend-Tests mit React Testing Library sowie Django-Tests für Backend-Views, Models und APIs geschrieben und mit Git und Code Reviews gearbeitet.",
     ],
     stack: [
       "JavaScript",
-      "React",
       "Python",
+      "React",
       "Django",
       "REST APIs",
       "React Testing Library",

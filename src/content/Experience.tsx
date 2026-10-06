@@ -19,14 +19,15 @@ export default function Experience({ language }: ExperienceProps) {
 
       <div className="flex flex-col gap-12">
         {experience.map((item) => {
+          const subtitle = localized(language, item, "subtitle");
           const highlights = localizedList(language, item, "highlights");
 
           return (
             <article
               key={`${item.company}-${item.period}`}
-              className="group grid grid-cols-1 gap-x-8 gap-y-2 rounded-md border border-transparent p-4 transition-colors duration-200 hover:border-[var(--beige-accent)]/40 hover:bg-[var(--beige-light)]/30 lg:grid-cols-[7.5rem_1fr] lg:gap-y-3"
+              className="group grid grid-cols-1 gap-x-8 gap-y-2 rounded-md border border-transparent p-4 transition-colors duration-200 hover:border-[var(--beige-accent)]/40 hover:bg-[var(--beige-light)]/30 lg:grid-cols-[max-content_minmax(0,1fr)] lg:gap-y-3"
             >
-              <p className="pt-0.5 text-xs leading-normal text-[var(--text-subtle)]">
+              <p className="whitespace-nowrap pt-0.5 text-xs leading-normal text-[var(--text-subtle)]">
                 {item.period}
               </p>
 
@@ -41,6 +42,11 @@ export default function Experience({ language }: ExperienceProps) {
                     className="h-5 w-5 shrink-0 text-[var(--text-subtle)] transition-transform duration-150 ease-out group-hover:-translate-y-0.5 group-hover:text-[var(--text-primary)]"
                   />
                 </div>
+                {subtitle && (
+                  <p className="mt-1 mb-2 text-sm font-medium leading-relaxed text-[var(--text-muted)]">
+                    {subtitle}
+                  </p>
+                )}
                 <p className="mt-1 text-[0.9375rem] text-[var(--text-muted)]">
                   {item.company} · {localized(language, item, "employmentType")}
                 </p>

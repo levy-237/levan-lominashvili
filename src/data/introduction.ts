@@ -1,12 +1,12 @@
 export const introduction = {
   paragraphs: [
-    "I'm a full-stack developer based in Vienna, with hands-on experience building production-level web applications, internal tools, and user-facing marketplace features. I work mainly with React, Next.js, TypeScript, Django, Django REST Framework, PostgreSQL, GraphQL, and REST APIs.",
-    "My experience covers frontend implementation, backend development, API integration, authentication flows, testing, and working with existing production codebases. I focus on building reliable features that are maintainable, usable, and aligned with real business needs.",
-    "I'm currently focused on growing further as a full-stack developer, contributing to real products, and taking on more responsibility as an engineer.",
+    "I'm a full-stack developer based near Vienna, with 3 years of professional experience building production web applications, internal tools, and user-facing products. I specialize in TypeScript/JavaScript, React, and Next.js, with backend experience in Python/Django and Java/Spring Boot.",
+    "My experience covers frontend and backend development, REST and GraphQL APIs, authentication, PostgreSQL, Redis, WebSockets, testing, and Docker. My experience also includes working with Claude, Codex, and Cursor for implementation, debugging, and refactoring, while manually reviewing, testing, and validating the resulting code.",
+    "I've worked on production job platforms, internal business applications, marketplace features, and real-time systems using external APIs and live data, with a focus on building reliable, maintainable software around real business requirements.",
   ],
   "paragraphs-de": [
-    "Ich bin Full-Stack-Entwickler aus Wien mit praktischer Erfahrung in der Entwicklung produktionsnaher Webanwendungen, interner Tools und benutzerorientierter Marketplace-Features. Ich arbeite hauptsächlich mit React, Next.js, TypeScript, Django, Django REST Framework, PostgreSQL, GraphQL und REST APIs.",
-    "Meine Erfahrung umfasst Frontend-Implementierung, Backend-Entwicklung, API-Integration, Authentifizierungs-Flows, Testing und die Arbeit mit bestehenden produktiven Codebases. Mein Fokus liegt auf zuverlässigen Features, die wartbar, nutzerfreundlich und auf echte Geschäftsanforderungen ausgerichtet sind.",
-    "Aktuell fokussiere ich mich darauf, als Full-Stack-Entwickler weiter zu wachsen, zu echten Produkten beizutragen und mehr Verantwortung als Entwickler zu übernehmen.",
+    "Ich bin Full-Stack-Entwickler aus dem Raum Wien mit 3 Jahren professioneller Erfahrung in der Entwicklung produktiver Webanwendungen, interner Tools und nutzerorientierter Produkte. Mein Schwerpunkt liegt auf TypeScript/JavaScript, React und Next.js sowie Backend-Entwicklung mit Python/Django und Java/Spring Boot.",
+    "Meine Erfahrung umfasst Frontend- und Backend-Entwicklung, REST- und GraphQL-APIs, Authentifizierung, PostgreSQL, Redis, WebSockets, Testing und Docker. Meine Erfahrung umfasst auch den Einsatz von Claude, Codex und Cursor für Implementierung, Debugging und Refactoring, wobei ich den erzeugten Code selbst prüfe, teste und validiere.",
+    "Ich habe an produktiven Jobplattformen, internen Business-Anwendungen, Marketplace-Features und Echtzeitsystemen mit externen APIs und Live-Daten gearbeitet und lege dabei Wert auf zuverlässige, wartbare Software für reale Geschäftsanforderungen.",
   ],
 };
