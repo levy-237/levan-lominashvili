@@ -52,6 +52,16 @@ export const projects: ProjectItem[] = [
         "label-de": "Live-Demo",
         href: "https://flight-tracker-client.vercel.app/",
       },
+      {
+        label: "Frontend GitHub",
+        "label-de": "Frontend GitHub",
+        href: "https://github.com/levy-237/flightTracker_client",
+      },
+      {
+        label: "Backend GitHub",
+        "label-de": "Backend GitHub",
+        href: "https://github.com/levy-237/flightTracket_api",
+      },
     ],
   },
   {
